@@ -1,0 +1,111 @@
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+{% extends 'admin/adminindex.html' %}}
+{% block body %}
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+<style>
+ td {
+  background-color: white;
+  border: 1px solid;
+}
+input {
+  width: 100%;
+}
+table {
+  width: 90%;
+}
+    th{
+    background-color:#e03a3c;
+    }
+input[type=submit] {
+  width: 100px;
+  background-color:#e03a3c;
+  color: white;
+  padding: 8px 20px;
+  margin: 6px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  background-color: #e03a3c;
+  color: white;
+
+}
+</style>
+<body>
+<form id="form1" name="form1" method="post" action="edit_EXPERT1#about">
+  <table width="200" border="1">
+    <tr>
+      <th> Fname</th>
+      <td>
+        <input type="text" name="textfield" value="{{val['first_name']}}"/>
+      </td>
+    </tr>
+      <tr>
+      <th>Lname</th>
+      <td>
+        <input type="text" name="textfield10"  value="{{val['last_name']}}" />
+      </td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td>
+        <input type="text" name="textfield2"  value="{{val['email']}}" />
+      </td>
+    </tr>
+    <tr>
+      <th>Phone No </th>
+      <td>
+        <input type="text" name="textfield3"  value="{{val['Phone_no']}}"/>
+      </td>
+    </tr>
+    <tr>
+      <th>Place</th>
+      <td>
+        <input type="text" name="textfield4"  value="{{val['place']}}" />
+      </td>
+    </tr>
+    <tr>
+      <th>Post</th>
+      <td>
+        <input type="text" name="textfield6"  value="{{val['post']}}"/>
+      </td>
+    </tr>
+    <tr>
+      <th>Pin</th>
+      <td>
+        <input type="text" name="textfield7"  value="{{val['pin']}}" />
+      </td>
+    </tr>
+
+
+
+
+
+
+    <tr>
+      <td colspan="2"align="center"><label>
+      <div >
+        <input type="submit" name="Submit" value="SUBMIT" />
+      </div>
+      </label></td>
+    </tr>
+
+
+  </table>
+
+</form>
+</body>
+</html>
+{% endblock %}
+
